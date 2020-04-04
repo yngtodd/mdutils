@@ -3,7 +3,7 @@ from mdutils.mdutils import MdUtils
 
 
 mdFile = MdUtils(file_name=f"{Path('README')}",title='This is a Markdown File Example')
-#mdFile.create_md_file()
+mdFile.create_md_file()
 mdFile.new_header(level=1, title='Atx Header 1')
 mdFile.new_line()
 mdFile.new_image('results', './history.png')
