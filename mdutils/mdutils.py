@@ -313,3 +313,10 @@ class MdUtils:
         :rtype: str
         """
         return self.file_data_text.replace(marker, text)
+
+    def new_image(self, name, path):
+        image = tools.Image()
+        file_data = image.create_image(name, path)
+        self.file_data_text += file_data
+        return file_data
+

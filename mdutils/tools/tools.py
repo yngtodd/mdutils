@@ -466,6 +466,14 @@ class TextUtils(object):
         return new_text_format
 
 
+class Image:
+
+    def create_image(self, name: str, path):
+        file_data_txt = f'![{name}]({path})'
+        return file_data_txt
+
+
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
